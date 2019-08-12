@@ -76,8 +76,9 @@ class Pubspec {
   Dependencies dependencies;
   String homepage;
   String name;
+  String repository;
 
-  Pubspec({this.environment, this.version, this.description, this.author,
+  Pubspec({this.environment, this.repository, this.version, this.description, this.author,
       this.authors, this.dev_dependencies, this.dependencies, this.homepage,
       this.name});
 
