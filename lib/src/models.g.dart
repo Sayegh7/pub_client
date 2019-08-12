@@ -114,6 +114,7 @@ Pubspec _$PubspecFromJson(Map<String, dynamic> json) {
           ? null
           : Dependencies.fromJson(json['dependencies'] as Map<String, dynamic>),
       homepage: json['homepage'] as String,
+      repository: json['repository'] as String,
       name: json['name'] as String);
 }
 
@@ -126,6 +127,7 @@ Map<String, dynamic> _$PubspecToJson(Pubspec instance) => <String, dynamic>{
       'dev_dependencies': instance.dev_dependencies,
       'dependencies': instance.dependencies,
       'homepage': instance.homepage,
+      'repository': instance.repository,
       'name': instance.name
     };
 
